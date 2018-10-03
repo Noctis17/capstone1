@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Capstone 1</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<style>
+	    .google-maps {
+	        position: relative;
+	        padding-bottom: 75%; // This is the aspect ratio
+	        height: 0;
+	        overflow: hidden;
+	    }
+	    .google-maps iframe {
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        width: 100% !important;
+	        height: 100% !important;
+	    }
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+	  <a class="navbar-brand" href="#">My Website</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+
+	      <li class="nav-item">
+	        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" href="about.html">About</a>
+	      </li>
+	      
+	      <li class="nav-item">
+	        <a class="nav-link" href="gallery.html">Gallery</a>
+	        <!-- <a class="nav-link disabled" href="#">Gallery</a> -->
+	      </li>
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="contact.html">Contact</a>
+	      </li>
+
+	    </ul>
+
+	  </div>
+	</nav>
+
+	<div class="row">
+		<div class="col-lg-1 col-md-1 col-sm-1"></div>
+		<div class="col-lg-5 col-md-12 col-sm-12">
+
+			<div class="google-maps mb-5">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.4101322928072!2d121.04148921424273!3d14.632645089782077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7afe6a39331%3A0xd367e6dc5e274032!2sCaswynn+Building%2C+134+Timog+Ave%2C+Diliman%2C+Quezon+City%2C+Metro+Manila!5e0!3m2!1sen!2sph!4v1536307489444" width="500" height="450" frameborder="0" id="map-canvas" style="border:0" allowfullscreen></iframe>
+			</div>
+
+		</div>
+		<div class="col-lg-5 col-md-12 col-sm-12">
+			<form class="form-horizontal">
+				<fieldset>
+
+				<!-- Form Name -->
+				<legend>Contact Us</legend>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 col-form-label" for="fullname">Full Name</label> 
+				  <input id="fullname" name="fullname" placeholder="Full Name" class="form-control" required="" type="text">
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 col-form-label" for="email">Email Address</label>  
+				  <input id="email" name="email" placeholder="Email Address" class="form-control input-md" type="text">
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="message">Message</label>                   
+				    <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
+				</div>
+
+				<!-- Button -->
+				<div class="form-group">
+				  <div class="col-md-4">
+				    <button id="submit" name="submit" class="btn btn-outline-primary">Submit</button>
+				  </div>
+				</div>
+
+				</fieldset>
+				</form>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="page-footer font-small blue pt-4">
+
+
+	    <!-- Copyright -->
+	    <div class="footer-copyright text-center py-3"> &copy; 2018
+	      <a href="https://tuitt.com" target="_blank"> Tuitt Philippines Incorporated</a>
+	    </div>
+	    <!-- Copyright -->
+
+	  </footer>
+	  <!-- Footer -->
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$('.navbar-collapse ul li a').click(function(){ 
+            $('.navbar-toggler').click();
+	    });
+
+
+	</script>
+</body>
+</html>
